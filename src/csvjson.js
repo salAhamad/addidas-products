@@ -8,7 +8,7 @@ export const addidasData = [
     "discount": 50,
     "brand": "ORIGINALS",
     "description": "Channeling the streamlined look of an '80s racer, these shoes are updated with modern features. The foot-hugging adidas Primeknit upper offers a soft, breathable feel. The Boost midsole provides responsive comfort accented with a contrast-color EVA heel plug. Embroidered details add a distinctive finish.",
-    "rating": 0,
+    "rating": 5,
     "reviews": 0,
     "images": [
       "https://content.adidas.co.in/static/Product-AH2430/WOMEN_Originals_SHOES_LOW_AH2430_1.jpg",

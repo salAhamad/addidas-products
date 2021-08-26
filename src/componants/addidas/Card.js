@@ -1,17 +1,16 @@
 import React, { useState } from 'react'
 import { Link, useParams } from 'react-router-dom';
 function Card({data}) {
-    const [classActive, setClassActive] = useState(false);
     const {productFullID} = useParams();
-    const [imageIndex, setImageIndex] = useState(0)
+    const [imageIndex, setImageIndex] = useState(0);
+    const [classActive, setClassActive] = useState(false);
     const toggleActive = (e) => {
         const id = e.target.id;
         console.log(id);
         setClassActive(!classActive)
     };
-    const handleSetImageIndex = (index) => {
-        setImageIndex(index)
-    } 
+    const handleSetImageIndex = (index) => setImageIndex(index);
+
     return <div className="cardContainer">
         <span className={classActive ? "wishlistButton active" : "wishlistButton"} onClick={(e) => toggleActive(e)}>
             <i id={data.productId} className={ classActive ? "fas fa-heart" : "far fa-heart"}></i>

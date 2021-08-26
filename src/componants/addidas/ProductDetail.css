@@ -1,6 +1,7 @@
 .cardDetailSection {
     position: relative;
     width: 100%;
+    min-height: calc(100vh - 112px);
 }
 .cardDetailContainer {
     position: relative;
@@ -20,6 +21,7 @@
     text-align: center;
     color: white;
 }
+.line-through {text-decoration: line-through;}
 .wishlistButton2 {    
     position: relative;
     top: 0;
@@ -32,25 +34,25 @@
     z-index: 1;
     cursor: pointer;
 }
-.wishlistButton i {transform: scale(1.0); font-size: 1.3rem;}
-.wishlistButton.active {animation: scaleAnime 1s ease-in;}
+.wishlistButton2 i {transform: scale(1.0); font-size: 1.3rem;}
+.wishlistButton2.active {animation: scaleAnime 1s ease-in;}
 @keyframes scaleAnime  {  50% {transform: scale(1.5);} }
 
 .cardImages {
     position: relative;
     width: 100%;
-    min-height: 450px;
-    max-height: 450px;
+    min-height: 500px;
+    max-height: 500px;
     border: 1px solid #ccc;
 }
 .shortThumbnail {
     position: relative;
     width: 100%;
-    height: 450px;
+    height: 498px;
     max-width: 80px;
     border-right: 1px solid #ccc;
     padding: 0;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
 }
 .shortThumbnail::-webkit-scrollbar { width: 3px; height: 3px; }
 .shortThumbnail::-webkit-scrollbar-track { border-radius: 10px;}
@@ -64,14 +66,16 @@
     justify-content: center;
     align-items: center;
     padding: .3rem;
+    cursor: pointer;
 }
+.shortThumbnail li.active {box-shadow: inset 0 0 0 3px rgba(0, 0, 0, 0.2);}
 .shortThumbnail li img {width: 100%;height: 100%;object-fit: cover;}
 img {width: 100%; max-width: 100%;}
 .bigThumbnail {
     position: relative;
     width: 100%;
-    min-height: 400px;
-    max-height: 400px;
+    min-height: 498px;
+    max-height: 498px;
     background-color: #ccc;
     overflow: hidden;
 }

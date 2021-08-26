@@ -8,6 +8,7 @@ function Listing() {
     const [cards, setcards] = useState(addidasData.slice(0, 12));
     const [classActive, setClassActive] = useState(false);
     const [cart, setCart] = useState([])
+
     
 
     return <div className="cardSection p-5">
@@ -15,7 +16,7 @@ function Listing() {
             <div className="d-flex flex-wrap">
                 {
                     cards.map((card, index) => {
-                        return <Card data={card} key={index} classActive={setClassActive} />
+                        return <Card data={card} key={index} classActive={setClassActive}  />
                     })
                 }
             </div>
